@@ -49,14 +49,7 @@ a:hover, a:focus {
 
 footer {
     padding: 50px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer {
-    padding: 50px 0;
+    background-color: #222;
 }
 
 footer p {
@@ -75,7 +68,9 @@ footer p {
 }
 
 /* IDs */
-
+#reps {
+  margin-top: 35px;
+}
 #map {
     width: 100%;
     height: 400px;
@@ -102,12 +97,27 @@ footer p {
     list-style-type: none;
 }
 
+#download > div > div > div {
+    padding: 7px;
+}
+
 /* CLASSES */
+.reps-table > .row {
+  margin-right: 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #555;
+}
 .page-scroll {
-  margin-top: 10px;
+  margin-top: 15px;
+}
+.navbar-collapse {
+  border: none;
 }
 .navbar {
-  height: 75px;
+  height: 80px;
+}
+.navbar-collapse {
+  border-top: 0;
 }
 .navbar-nav {
   z-index: 2;
@@ -121,7 +131,9 @@ footer p {
     background-color: black;
 }
 .navbar-custom .navbar-toggle {
-    padding: 15px 6px;
+    padding: 15px 0px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     font-size: 16px;
     color: white;
 }
@@ -129,8 +141,14 @@ footer p {
     outline: none;
 }
 .navbar-custom .navbar-brand {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
     text-align: center;
     font-weight: 700;
+    height: auto;
 }
 .navbar-custom .navbar-brand:focus {
     outline: none;
@@ -282,11 +300,14 @@ input[type=text] {
     -moz-animation-timing-function: linear;
 }
 
+#yes-votes {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+}
+
 .download-section {
-    width: 100%;
-    padding: 50px 0;
     color: white;
-    background: url(../img/senators-background.jpg) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -294,18 +315,12 @@ input[type=text] {
     -o-background-size: cover;
 }
 
-.download-section {
-    padding: 100px 0;
-}
-
 .content-section {
     padding-top: 100px;
 }
-
 .text {
   text-align: left;
 }
-
 .light {
     font-weight: 400;
 }
@@ -343,24 +358,28 @@ input[type=text] {
 /* MEDIA QUERIES */
 
 @media (min-width: 767px) {
-    .content-section { margin-top: 250px; }
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
+    #yes-votes {
+      width: auto;
+      height: auto;
+      max-width: 1920px;
+      max-height: 1080px;
+    }
 }
 
 @media (max-width:768px) {
     .navbar-nav {
-      margin-top: 4px;
+      margin-top: 0px;
     }
     #zip {
         width: 100%;
         margin-bottom: 12px;
         display: inline-block;
     }
-
     #zipButton {
         width: 100%;
         display: inline-block;
